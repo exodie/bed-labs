@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная</title>
-    <link rel="icon" type="image/x-icon" href="https://psv4.userapi.com/s/v1/d/vMIW5acg4jaNyUnBYePi1plxXqYllI21CRtJ1zqMfJfHvLWmXhgiUeoSHr1NGt4ed-Dau06IHfgPqSXyHqbWz1TrgAa-yt9Yw1n2RkDW0sj3QTONK-8dmA/favicon.ico" />
+    <title>О приложении</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://psv4.userapi.com/s/v1/d/vMIW5acg4jaNyUnBYePi1plxXqYllI21CRtJ1zqMfJfHvLWmXhgiUeoSHr1NGt4ed-Dau06IHfgPqSXyHqbWz1TrgAa-yt9Yw1n2RkDW0sj3QTONK-8dmA/favicon.ico"
+    />
   </head>
   <body>
     <header class="header">
@@ -33,7 +37,6 @@
             ></path>
           </svg>
         </div>
-
         <div class="burger" id="burger">
           <img
             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1lbnUiPjxsaW5lIHgxPSI0IiB4Mj0iMjAiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjQiIHgyPSIyMCIgeTE9IjYiIHkyPSI2Ii8+PGxpbmUgeDE9IjQiIHgyPSIyMCIgeTE9IjE4IiB5Mj0iMTgiLz48L3N2Zz4="
@@ -47,12 +50,7 @@
         </div>
         <ul id="navigation" class="header__navigation-list">
           <li class="header__navigation-list-item">
-            <a
-              href="./index.html"
-              class="active"
-              onclick="event.preventDefault()"
-              >Главная</a
-            >
+            <a href="./index.html">Главная</a>
           </li>
           <li class="header__navigation-list-item">
             <a href="./projects.html">Проекты</a>
@@ -61,24 +59,19 @@
             <a href="./todo.html">Список задач</a>
           </li>
           <li class="header__navigation-list-item">
-            <a href="./info.html">О приложении</a>
+            <a
+              href="./info.html"
+              class="active"
+              onclick="event.preventDefault()"
+              >О приложении</a
+            >
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main">
-      <aside class="main__side">
-        <h1 class="main__side-title">To Do</h1>
-        <p class="main__side-descs">
-          Помощник в ваших
-          <span class="main__side-descs-line">повседневных</span> задачах
-        </p>
-      </aside>
+    <main>О приложении</main>
 
-      <img src="https://sun9-53.userapi.com/impg/L42eTzqNpcej0xzd5mNIIkeOfjaF8uJ52tn0dg/IGNYvzbzmaw.jpg?size=2000x2000&quality=95&sign=9d27cb0b216e1ea7c73391e7bb03137b&type=album" class="main__image" alt="" />
-    </main>
-
-    <script src="bundle.js"></script>
+    <script src="../bundle.js"></script>
   </body>
 </html>
