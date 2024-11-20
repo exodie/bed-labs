@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Список задач</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://psv4.userapi.com/s/v1/d/vMIW5acg4jaNyUnBYePi1plxXqYllI21CRtJ1zqMfJfHvLWmXhgiUeoSHr1NGt4ed-Dau06IHfgPqSXyHqbWz1TrgAa-yt9Yw1n2RkDW0sj3QTONK-8dmA/favicon.ico"
-    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   </head>
   <body>
     <header class="header">
@@ -38,19 +34,16 @@
           </svg>
         </div>
         <div class="burger" id="burger">
+          <img src="/menu.svg" class="icon menu" />
           <img
-            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1lbnUiPjxsaW5lIHgxPSI0IiB4Mj0iMjAiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjQiIHgyPSIyMCIgeTE9IjYiIHkyPSI2Ii8+PGxpbmUgeDE9IjQiIHgyPSIyMCIgeTE9IjE4IiB5Mj0iMTgiLz48L3N2Zz4="
-            class="icon menu"
-          />
-          <img
-            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+"
+            src="/close-menu.svg"
             class="icon close-menu"
             style="display: none"
           />
         </div>
         <ul id="navigation" class="header__navigation-list">
           <li class="header__navigation-list-item">
-            <a href="./index.html">Главная</a>
+            <a href="../index.html">Главная</a>
           </li>
           <li class="header__navigation-list-item">
             <a href="./projects.html">Проекты</a>
@@ -77,19 +70,15 @@
       <div class="todo">
         <div class="todo__column">
           <h2 class="todo__column-title">Сделать</h2>
-          <div class="todo__column-card">Задача 1 <button>Удалить</button></div>
-          <div class="todo__column-card">Задача 2 <button>Удалить</button></div>
+          <div id="todo"></div>
         </div>
         <div class="todo__column">
           <h2 class="todo__column-title">В процессе</h2>
-          <div class="todo__column-card">
-            Задача 3
-            <button>Удалить</button>
-          </div>
+          <div id="progress"></div>
         </div>
         <div class="todo__column">
           <h2 class="todo__column-title">Сделано</h2>
-          <div class="todo__column-card">Задача 4 <button>Удалить</button></div>
+          <div id="done"></div>
         </div>
       </div>
 
@@ -101,7 +90,7 @@
           <h2>Добавить задачу</h2>
           <input type="text" id="taskInput" placeholder="Название задачи" />
           <menu>
-            <button onclick="window.addTaskDialog.close()" id="saveTaskButton">
+            <button id="saveTaskButton">
               Сохранить
             </button>
             <button
@@ -116,6 +105,6 @@
       </dialog>
     </main>
 
-    <script src="../bundle.js"></script>
+    <script type="module" src="../js/main.js"></script>
   </body>
 </html>

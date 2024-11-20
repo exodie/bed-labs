@@ -3,12 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>О приложении</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://psv4.userapi.com/s/v1/d/vMIW5acg4jaNyUnBYePi1plxXqYllI21CRtJ1zqMfJfHvLWmXhgiUeoSHr1NGt4ed-Dau06IHfgPqSXyHqbWz1TrgAa-yt9Yw1n2RkDW0sj3QTONK-8dmA/favicon.ico"
-    />
+    <title>Ошибка 404</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   </head>
   <body>
     <header class="header">
@@ -38,40 +34,42 @@
           </svg>
         </div>
         <div class="burger" id="burger">
+          <img src="/menu.svg" class="icon menu" />
           <img
-            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1lbnUiPjxsaW5lIHgxPSI0IiB4Mj0iMjAiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjQiIHgyPSIyMCIgeTE9IjYiIHkyPSI2Ii8+PGxpbmUgeDE9IjQiIHgyPSIyMCIgeTE9IjE4IiB5Mj0iMTgiLz48L3N2Zz4="
-            class="icon menu"
-          />
-          <img
-            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+"
+            src="/close-menu.svg"
             class="icon close-menu"
             style="display: none"
           />
         </div>
         <ul id="navigation" class="header__navigation-list">
           <li class="header__navigation-list-item">
-            <a href="./index.html">Главная</a>
+            <a href="../index.html">Главная</a>
           </li>
           <li class="header__navigation-list-item">
-            <a href="./projects.html">Проекты</a>
+            <a
+              href="./projects.html"
+              class="active"
+              onclick="event.preventDefault()"
+              >Проекты</a
+            >
           </li>
           <li class="header__navigation-list-item">
             <a href="./todo.html">Список задач</a>
           </li>
           <li class="header__navigation-list-item">
-            <a
-              href="./info.html"
-              class="active"
-              onclick="event.preventDefault()"
-              >О приложении</a
-            >
+            <a href="./info.html">О приложении</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main>О приложении</main>
+    <main class="error">
+      <img
+        src="/404.svg"
+        class="error__image"
+      />
+    </main>
 
-    <script src="../bundle.js"></script>
+    <script type="module" src="../js/main.js"></script>
   </body>
 </html>
